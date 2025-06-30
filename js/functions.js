@@ -1,11 +1,10 @@
 //1)Функция для проверки длины строки.
 
 let checkingLengthString = (string, maxLength) => {
-    let result = (string.length <= maxLength);
-    return result;
+    return (string.length <= maxLength);
 };
 
-checkLengthString('sjdhfjwu7', 10);
+checkingLengthString('sjdhfjwu7', 10);
 
 //2)Функция для проверки, является ли строка палиндромом.
 
