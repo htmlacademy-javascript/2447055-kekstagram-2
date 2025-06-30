@@ -10,7 +10,7 @@ checkingLengthString('sjdhfjwu7', 10);
 
 let checkingPalindrome = (initialString) => {
 
-let preparedString = initialString.replaceAll(/\s/g, "").toLowerCase();
+const preparedString = initialString.replaceAll(/\s/g, "").toLowerCase();
 
 let reverseString = "";
 
@@ -24,8 +24,8 @@ return preparedString === reverseString;
 //2.1)Оптимизированная версия.
 
 let checkingPalindrome = (initialString) => {
-let preparedString = initialString.replaceAll(/\s/g, "").toLowerCase();
-let reverseString = preparedString.split("").reverse().join("");
+const preparedString = initialString.replaceAll(/\s/g, "").toLowerCase();
+const reverseString = preparedString.split("").reverse().join("");
 return preparedString === reverseString;
 };
 
