@@ -12,9 +12,13 @@ const checkingPalindrome = (initialString) => {
   return preparedString === reverseString;
 };
 
+checkingPalindrome('Лёша на полке клопа нашёл');
+
 //3)Функция для извлечения цифр из строки
 
 const numberSearch = (entry) => {
   const string = String(entry);
-  return parseInt(string.replaceAll(/\D/g, ''));
+  return parseInt(string.replaceAll(/\D/g, ''), 10);
 };
+
+numberSearch('1 кефир, 0.5 батона');
