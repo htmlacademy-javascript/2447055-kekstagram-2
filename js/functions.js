@@ -1,6 +1,6 @@
 //1)Функция для проверки длины строки.
 
-let checkingLengthString = (string, maxLength) => {
+const checkingLengthString = (string, maxLength) => {
     return (string.length <= maxLength);
 };
 
@@ -8,7 +8,7 @@ checkingLengthString('sjdhfjwu7', 10);
 
 //2)Функция для проверки, является ли строка палиндромом.
 
-let checkingPalindrome = (initialString) => {
+const checkingPalindrome = (initialString) => {
 
 const preparedString = initialString.replaceAll(/\s/g, "").toLowerCase();
 
@@ -23,7 +23,7 @@ return preparedString === reverseString;
 
 //2.1)Оптимизированная версия.
 
-let checkingPalindrome = (initialString) => {
+const checkingPalindrome = (initialString) => {
 const preparedString = initialString.replaceAll(/\s/g, "").toLowerCase();
 const reverseString = preparedString.split("").reverse().join("");
 return preparedString === reverseString;
@@ -31,14 +31,14 @@ return preparedString === reverseString;
 
 //3)
 
-let numberSearch = (entry) => {
-let string = String(entry);
+const numberSearch = (entry) => {
+const string = String(entry);
 return parseInt(string.replaceAll(/\D/g, ""));
 }
 
 //3.1)
 
-let numberSearch = (entry) => {
-let string = (typeof entry === 'string') ? entry : String(entry);
+const numberSearch = (entry) => {
+const string = (typeof entry === 'string') ? entry : String(entry);
 return parseInt(string.replaceAll(/\D/g, ""));
 }
