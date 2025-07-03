@@ -12,7 +12,7 @@ const checkingPalindrome = (initialString) => {
   return preparedString === reverseString;
 };
 
-//3)
+//3)Функция для извлечения цифр из строки
 
 const numberSearch = (entry) => {
   const string = String(entry);
