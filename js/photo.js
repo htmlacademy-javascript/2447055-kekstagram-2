@@ -1,3 +1,7 @@
+import {MIN_LIKES, MAX_LIKES} from './data.js';
+import {getRandomPositiveInteger} from './utils.js';
+import {createComment, getRandomCountComments} from './comment.js';
+
 let photoId = 1;
 const createPhoto = () => {
   const photo = {
@@ -10,3 +14,5 @@ const createPhoto = () => {
   photoId++;
   return photo;
 };
+
+export {createPhoto};

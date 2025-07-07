@@ -1,3 +1,6 @@
+import {messages, userNames, MIN_COMMENTS, MAX_COMMENTS} from './data.js';
+import {getRandomPositiveInteger, getRandomArrayElement} from './utils.js';
+
 let commentId = 1;
 const createComment = () => {
   const comment = {
@@ -11,3 +14,5 @@ const createComment = () => {
 };
 
 const getRandomCountComments = () => getRandomPositiveInteger(MIN_COMMENTS, MAX_COMMENTS);
+
+export {createComment, getRandomCountComments};

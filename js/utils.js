@@ -6,3 +6,5 @@ const getRandomPositiveInteger = (a, b) => {
 };
 
 const getRandomArrayElement = (element) => element[getRandomPositiveInteger(0, element.length - 1)];
+
+export {getRandomPositiveInteger, getRandomArrayElement};
