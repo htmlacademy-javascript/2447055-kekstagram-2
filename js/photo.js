@@ -1,6 +1,8 @@
-import {MIN_LIKES, MAX_LIKES} from './data.js';
+import {MIN_LIKES, MAX_LIKES, MIN_COMMENTS, MAX_COMMENTS} from './data.js';
 import {getRandomPositiveInteger} from './utils.js';
-import {createComment, getRandomCountComments} from './comment.js';
+import {createComment} from './comment.js';
+
+const getRandomCountComments = () => getRandomPositiveInteger(MIN_COMMENTS, MAX_COMMENTS);
 
 let photoId = 1;
 const createPhoto = () => {
